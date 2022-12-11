@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyNetWebApp.Data;
+using MyNetWebApp.Interfaces;
 using MyNetWebApp.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,22 +14,22 @@ namespace MyNetWebApp.Controllers
 {
     public class ClubController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IClubRepository _clubRepository;
 
-        public ClubController(ApplicationDbContext context)
+        public ClubController(IClubRepository clubRepository)
         {
-            this._context = context;
+            this._clubRepository = clubRepository;
         }
         // GET: /<controller>/
-        public IActionResult Index() // Controller
+        public async Task<IActionResult> Index() // Controller
         {
-            List<Club> clubs = _context.Clubs.ToList(); // get data from Model
+            IEnumerable<Club> clubs = await _clubRepository.GetAll(); // get data from Model
             return View(clubs); // show data in View
         }
 
-        public IActionResult Detail(int id)
+        public async Task<IActionResult> Detail(int id)
         {
-            Club club = _context.Clubs.Include(a => a.Address).FirstOrDefault(data => data.Id == id);
+            Club club = await _clubRepository.GetByIdAsync(id);
             return View(club);
         }
     }

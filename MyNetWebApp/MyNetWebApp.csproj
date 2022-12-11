@@ -14,12 +14,16 @@
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Views\Club\" />
     <None Remove="Views\Race\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Data\Enum\" />
     <Folder Include="Views\Club\" />
     <Folder Include="Views\Race\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
