@@ -1,4 +1,41 @@
 ﻿<Properties StartupConfiguration="{50284D38-5FA5-4B3C-9E0A-28F46585EED7}|Default">
-  <MonoDevelop.Ide.ItemProperties.MyNetWebApp FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Program.cs">
+    <Files>
+      <File FileName="MyNetWebApp/Program.cs" Line="15" Column="27" />
+      <File FileName="MyNetWebApp/appsettings.Development.json" Line="1" Column="2" />
+      <File FileName="MyNetWebApp/Models/AppUser.cs" Line="16" Column="39" />
+      <File FileName="MyNetWebApp/Models/Club.cs" Line="1" Column="1" />
+      <File FileName="MyNetWebApp/Data/ApplicationDbContext.cs" Line="13" Column="47" />
+      <File FileName="MyNetWebApp/Data/Seed.cs" Line="10" Column="75" />
+      <File FileName="MyNetWebApp/Data/Enum/RaceCategory.cs" Line="6" Column="12" />
+      <File FileName="MyNetWebApp/Models/Race.cs" Line="20" Column="32" />
+      <File FileName="MyNetWebApp/Migrations/20221210163141_InitialCreate.cs" Line="8" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyNetWebApp" expanded="True">
+            <Node name="MyNetWebApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Enum" expanded="True" />
+              </Node>
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MyNetWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
 </Properties>
