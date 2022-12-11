@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyNetWebApp.Data;
 using MyNetWebApp.Models;
 
@@ -24,6 +25,12 @@ namespace MyNetWebApp.Controllers
         {
             List<Race> races = _context.Races.ToList();
             return View(races);
+        }
+
+        public IActionResult Detail(int id)
+        {
+            Race race = _context.Races.Include(a => a.Address).FirstOrDefault(data => data.Id == id);
+            return View(race);
         }
     }
 }
