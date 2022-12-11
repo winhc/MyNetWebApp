@@ -2,35 +2,38 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Controllers/ClubController.cs">
     <Files>
-      <File FileName="MyNetWebApp/Program.cs" Line="15" Column="27" />
-      <File FileName="MyNetWebApp/appsettings.Development.json" Line="1" Column="2" />
-      <File FileName="MyNetWebApp/Models/AppUser.cs" Line="16" Column="39" />
-      <File FileName="MyNetWebApp/Models/Club.cs" Line="1" Column="1" />
-      <File FileName="MyNetWebApp/Data/ApplicationDbContext.cs" Line="13" Column="47" />
-      <File FileName="MyNetWebApp/Data/Seed.cs" Line="10" Column="75" />
-      <File FileName="MyNetWebApp/Data/Enum/RaceCategory.cs" Line="6" Column="12" />
-      <File FileName="MyNetWebApp/Models/Race.cs" Line="20" Column="32" />
-      <File FileName="MyNetWebApp/Migrations/20221210163141_InitialCreate.cs" Line="8" Column="5" />
+      <File FileName="MyNetWebApp/Controllers/ClubController.cs" Line="13" Column="1" />
+      <File FileName="MyNetWebApp/Views/Club/Index.cshtml" Line="60" Column="7" />
+      <File FileName="MyNetWebApp/Views/Home/Index.cshtml" Line="70" Column="7" />
+      <File FileName="MyNetWebApp/Views/Shared/_Layout.cshtml" Line="37" Column="11" />
+      <File FileName="MyNetWebApp/Controllers/RaceController.cs" Line="12" Column="6" />
+      <File FileName="MyNetWebApp/Views/Race/Index.cshtml" Line="37" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyNetWebApp" expanded="True">
             <Node name="MyNetWebApp" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="Enum" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ClubController.cs" selected="True" />
               </Node>
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Club" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Race" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
