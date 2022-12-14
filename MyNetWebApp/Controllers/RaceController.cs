@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using MyNetWebApp.Data;
 using MyNetWebApp.Interfaces;
 using MyNetWebApp.Models;
+using MyNetWebApp.Repositories;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -32,6 +33,22 @@ namespace MyNetWebApp.Controllers
         {
             Race race = await _raceRepository.GetByIdAsync(id);
             return View(race);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Race race)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(race);
+            }
+            _raceRepository.Add(race);
+            return RedirectToAction("Index");
         }
     }
 }
