@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Club/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Club/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9EZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
