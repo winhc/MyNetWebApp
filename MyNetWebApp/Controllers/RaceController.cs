@@ -71,6 +71,65 @@ namespace MyNetWebApp.Controllers
             return View(createRaceViewMovdel);
            
         }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var race = await _raceRepository.GetByIdAsync(id);
+            if (race == null) return View("Error");
+            var editRaceViewModel = new EditRaceViewModel
+            {
+                Id = race.Id,
+                Title = race.Title,
+                Description = race.Description,
+                AddressId = race.AddressId,
+                Address = race.Address,
+                Url = race.Image
+            };
+
+            return View(editRaceViewModel);
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditRaceViewModel editRaceViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit race!");
+                return View("Edit", editRaceViewModel);
+            }
+
+            var userRace = await _raceRepository.GetByIdAsyncNoTracking(editRaceViewModel.Id);
+            if (userRace != null)
+            {
+                try
+                {
+                    await _photoService.DeletePhotoAsync(userRace.Image);
+                }
+                catch (Exception e)
+                {
+                    ModelState.AddModelError("", "Could not delete!" + e.Message);
+                    return View(editRaceViewModel);
+                }
+                var photoResult = await _photoService.AddPhotoAsync(editRaceViewModel.Image);
+
+                var race = new Race
+                {
+                    Id = id,
+                    Title = editRaceViewModel.Title,
+                    Description = editRaceViewModel.Description,
+                    Image = photoResult.Url.ToString(),
+                    AddressId = editRaceViewModel.AddressId,
+                    Address = editRaceViewModel.Address,
+                };
+                _raceRepository.Update(race);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(editRaceViewModel);
+            }
+        }
     }
 }
 

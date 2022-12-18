@@ -7,7 +7,8 @@ namespace MyNetWebApp.Interfaces
 		Task<IEnumerable<Club>> GetAll();
 		Task<IEnumerable<Club>> GetClubsByCity(string city);
 		Task<Club> GetByIdAsync(int id);
-		bool Add(Club club);
+		Task<Club> GetByIdAsyncNoTracking(int id);
+        bool Add(Club club);
 		bool Update(Club club);
 		bool Delete(Club club);
 		bool Save();

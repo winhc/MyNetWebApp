@@ -1,36 +1,21 @@
 ﻿<Properties StartupConfiguration="{50284D38-5FA5-4B3C-9E0A-28F46585EED7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/ViewModels/CreateClubViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Controllers/ClubController.cs">
     <Files>
-      <File FileName="MyNetWebApp/Controllers/ClubController.cs" Line="45" Column="58" />
-      <File FileName="MyNetWebApp/Views/Club/Create.cshtml" Line="13" Column="52" />
-      <File FileName="MyNetWebApp/Models/Address.cs" Line="18" Column="36" />
-      <File FileName="MyNetWebApp/Interfaces/IClubRepository.cs" />
-      <File FileName="MyNetWebApp/Interfaces/IRaceRepository.cs" />
-      <File FileName="MyNetWebApp/Repositories/ClubRepository.cs" />
-      <File FileName="MyNetWebApp/Views/Race/Create.cshtml" />
-      <File FileName="MyNetWebApp/Models/Race.cs" />
-      <File FileName="MyNetWebApp/Controllers/RaceController.cs" />
-      <File FileName="MyNetWebApp/appsettings.json" Line="12" Column="20" />
-      <File FileName="MyNetWebApp/Helpers/CloudinarySettings.cs" Line="13" Column="6" />
-      <File FileName="MyNetWebApp/Models/AppUser.cs" Line="1" Column="1" />
-      <File FileName="MyNetWebApp/Services/IPhotoService.cs" Line="7" Column="3" />
-      <File FileName="MyNetWebApp/Services/PhotoServices.cs" Line="9" Column="2" />
-      <File FileName="MyNetWebApp/Program.cs" Line="10" Column="27" />
-      <File FileName="MyNetWebApp/Models/Club.cs" Line="22" Column="31" />
-      <File FileName="MyNetWebApp/ViewModels/CreateClubViewModel.cs" Line="11" Column="4" />
+      <File FileName="MyNetWebApp/Controllers/ClubController.cs" Line="6" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyNetWebApp" expanded="True">
             <Node name="MyNetWebApp" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ClubController.cs" selected="True" />
+              </Node>
               <Node name="Helpers" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="CreateClubViewModel.cs" selected="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Club" expanded="True" />
                 <Node name="Race" expanded="True" />
@@ -40,13 +25,23 @@
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MyNetWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.MyNetWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="47" column="1" />
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="49" column="1" />
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="50" column="1" />
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="62" column="1" />
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Services/PhotoService.cs" relfile="MyNetWebApp/Services/PhotoService.cs" line="38" column="1" />
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Services/PhotoService.cs" relfile="MyNetWebApp/Services/PhotoService.cs" line="36" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

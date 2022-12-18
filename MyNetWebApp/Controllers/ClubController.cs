@@ -69,6 +69,63 @@ namespace MyNetWebApp.Controllers
             return View(clubViewModel);
 
         }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var club = await _clubRepository.GetByIdAsync(id);
+            if (club == null) return View("Error");
+            var editClubViewModel = new EditClubViewModel
+            { 
+                Id = club.Id,
+                Title = club.Title,
+                Description = club.Description,
+                AddressId = club.AddressId,
+                Address = club.Address,
+                Url = club.Image
+            };
+
+            return View(editClubViewModel);
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit( int id, EditClubViewModel editClubViewModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit club!");
+                return View("Edit", editClubViewModel);
+            }
+
+            var userClub = await _clubRepository.GetByIdAsyncNoTracking(editClubViewModel.Id);
+            if(userClub != null)
+            {
+                try
+                {
+                    await _photoService.DeletePhotoAsync(userClub.Image);
+                }catch(Exception e) 
+                {
+                    ModelState.AddModelError("", "Could not delete!" + e.Message);
+                    return View(editClubViewModel);
+                }
+                var photoResult = await _photoService.AddPhotoAsync(editClubViewModel.Image);
+
+                var club = new Club
+                {
+                    Id = id,
+                    Title = editClubViewModel.Title,
+                    Description = editClubViewModel.Description,
+                    Image = photoResult.Url.ToString(),
+                    AddressId = editClubViewModel.AddressId,
+                    Address = editClubViewModel.Address,
+                };
+                _clubRepository.Update(club);
+                return RedirectToAction("Index");
+            }else
+            {
+                return View(editClubViewModel); 
+            }
+        }
     }
 }
 

@@ -37,6 +37,12 @@ namespace MyNetWebApp.Repositories
             return await _context.Clubs.Include(a => a.Address).FirstOrDefaultAsync(club => club.Id == id);
         }
 
+        public async Task<Club> GetByIdAsyncNoTracking(int id)
+        {
+            return await _context.Clubs.Include(a => a.Address).AsNoTracking().FirstOrDefaultAsync(club => club.Id == id);
+
+        }
+
         public async Task<IEnumerable<Club>> GetClubsByCity(string city)
         {
             return await _context.Clubs.Where(club => club.Address.City.Contains(city)).ToListAsync();
@@ -50,7 +56,7 @@ namespace MyNetWebApp.Repositories
 
         public bool Update(Club club)
         {
-            _context.Update(club);
+            _context.Update(club); 
             return Save();
         }
     }
