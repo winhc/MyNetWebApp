@@ -8,6 +8,7 @@ using MyNetWebApp.Data;
 using MyNetWebApp.Interfaces;
 using MyNetWebApp.Models;
 using MyNetWebApp.Repositories;
+using MyNetWebApp.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,10 +17,12 @@ namespace MyNetWebApp.Controllers
     public class RaceController : Controller
     {
         private readonly IRaceRepository _raceRepository;
+        private readonly IPhotoService _photoService;
 
-        public RaceController(IRaceRepository raceRepository)
+        public RaceController(IRaceRepository raceRepository, IPhotoService photoService)
         {
             this._raceRepository = raceRepository;
+            this._photoService = photoService;
         }
 
         // GET: /<controller>/
@@ -41,14 +44,32 @@ namespace MyNetWebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Race race)
+        public async Task<IActionResult> Create(CreateRaceViewModel createRaceViewMovdel)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View(race);
+                var result = await _photoService.AddPhotoAsync(createRaceViewMovdel.Image);
+                Race race = new Race
+                {
+                    Title = createRaceViewMovdel.Title,
+                    Description = createRaceViewMovdel.Description,
+                    Image = result.Url.ToString(),
+                    Address = new Address
+                    {
+                        Street = createRaceViewMovdel.Address.Street,
+                        City = createRaceViewMovdel.Address.City,
+                        State = createRaceViewMovdel.Address.State
+                    }
+                };
+                _raceRepository.Add(race);
+                return RedirectToAction("Index");
             }
-            _raceRepository.Add(race);
-            return RedirectToAction("Index");
+            else
+            {
+                ModelState.AddModelError("", "Photo upload faFiled");
+            }
+            return View(createRaceViewMovdel);
+           
         }
     }
 }

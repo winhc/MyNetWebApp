@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyNetWebApp.Data;
+using MyNetWebApp.Helpers;
 using MyNetWebApp.Interfaces;
 using MyNetWebApp.Repositories;
+using MyNetWebApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IClubRepository, ClubRepository>();
 builder.Services.AddScoped<IRaceRepository, RaceRepository>();
+
+// Add CloudinarySettings Configuration
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
+// Add PhotoUpload Services
+builder.Services.AddScoped<IPhotoService, PhotoService>();
 
 // db connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

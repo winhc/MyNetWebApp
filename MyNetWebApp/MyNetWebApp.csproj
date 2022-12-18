@@ -16,6 +16,10 @@
     <None Remove="Views\Race\" />
     <None Remove="Interfaces\" />
     <None Remove="Repositories\" />
+    <None Remove="Helpers\" />
+    <None Remove="Services\" />
+    <None Remove="CloudinaryDotNet" />
+    <None Remove="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -24,6 +28,9 @@
     <Folder Include="Views\Race\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
@@ -32,5 +39,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="CloudinaryDotNet" Version="1.17.0" />
   </ItemGroup>
 </Project>

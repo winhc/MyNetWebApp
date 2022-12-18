@@ -64,3 +64,5 @@
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.pdb
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.genruntimeconfig.cache
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/ref/MyNetWebApp.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/CloudinaryDotNet.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Newtonsoft.Json.dll
