@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Club/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Club/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2x1Yi9EZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Race/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmFjZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Race/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmFjZS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Views/Race/Detail.cshtml]

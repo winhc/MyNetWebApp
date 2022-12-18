@@ -126,6 +126,22 @@ namespace MyNetWebApp.Controllers
                 return View(editClubViewModel); 
             }
         }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var clubDetail = await _clubRepository.GetByIdAsync(id);
+            if (clubDetail == null) return View("Error");
+            return View(clubDetail);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteClub(int id)
+        {
+            var clubDetail = await _clubRepository.GetByIdAsync(id);
+            if (clubDetail == null) return View("Error");
+            _clubRepository.Delete(clubDetail);
+            return RedirectToAction("Index");
+        }
     }
 }
 
