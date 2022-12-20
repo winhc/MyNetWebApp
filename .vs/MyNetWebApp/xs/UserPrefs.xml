@@ -1,30 +1,24 @@
 ﻿<Properties StartupConfiguration="{50284D38-5FA5-4B3C-9E0A-28F46585EED7}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Controllers/AccountController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Repositories/DashboardRepository.cs">
     <Files>
-      <File FileName="MyNetWebApp/Program.cs" Line="42" Column="46" />
-      <File FileName="MyNetWebApp/Views/Account/Login.cshtml" Line="7" Column="17" />
-      <File FileName="MyNetWebApp/ViewModels/LoginViewModel.cs" Line="9" Column="22" />
-      <File FileName="MyNetWebApp/Controllers/AccountController.cs" Line="36" Column="5" />
-      <File FileName="MyNetWebApp/Views/Shared/_Layout.cshtml" Line="33" Column="30" />
-      <File FileName="MyNetWebApp/Controllers/ClubController.cs" Line="16" Column="32" />
-      <File FileName="MyNetWebApp/Controllers/HomeController.cs" Line="18" Column="23" />
-      <File FileName="MyNetWebApp/Views/Club/Index.cshtml" Line="25" Column="98" />
-      <File FileName="MyNetWebApp/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="MyNetWebApp/Views/Home/Privacy.cshtml" Line="1" Column="1" />
-      <File FileName="MyNetWebApp/Views/Club/Create.cshtml" Line="1" Column="1" />
+      <File FileName="MyNetWebApp/Interfaces/IDashboardRepository.cs" />
+      <File FileName="MyNetWebApp/Repositories/DashboardRepository.cs" Line="27" Column="64" />
+      <File FileName="MyNetWebApp/Repositories/ClubRepository.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyNetWebApp" expanded="True">
             <Node name="MyNetWebApp" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="AccountController.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="DashboardRepository.cs" selected="True" />
               </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
-                <Node name="Club" expanded="True" />
-                <Node name="Home" expanded="True" />
+                <Node name="Dashboard" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="_Layout.cshtml" expanded="True" />
                 </Node>
@@ -48,7 +42,6 @@
       <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Services/PhotoService.cs" relfile="MyNetWebApp/Services/PhotoService.cs" line="36" column="1" />
       <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="94" column="1" />
       <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="87" column="1" />
-      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/AccountController.cs" relfile="MyNetWebApp/Controllers/AccountController.cs" line="32" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
