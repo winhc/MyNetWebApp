@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using MyNetWebApp.ViewModels
+@using MyNetWebApp.Data
+@model List<UserViewModel>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            @foreach (var user in Model)
+            {
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">@user.Username</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a class="btn btn-sm btn-outline-secondary" asp-controller="User" asp-action="Detail" asp-route-id="@user.Id">View</a>
+                                    @if (User.Identity.IsAuthenticated && User.IsInRole(UserRoles.Admin))
+                                    {
+                                        <a class="btn btn-sm btn-outline-secondary" asp-controller="User" asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+                                        <a class="btn btn-sm btn-outline-danger" asp-controller="User" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

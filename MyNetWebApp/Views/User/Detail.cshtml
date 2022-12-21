@@ -1,0 +1,49 @@
+﻿@using MyNetWebApp.ViewModels
+@model UserViewModel
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+        <div class="col-md-8">
+            <h2>@Model.Username</h2>
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="my-3">CLubs</h3>
+            @if (Model.Clubs != null)
+            {
+                <ul>
+
+                    @foreach (var club in Model.Clubs)
+                    {
+                        <li>@club</li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>not yet</p>
+            }
+
+            <h3 class="my-3">Races</h3>
+            @if (Model.Races != null)
+            {
+                <ul>
+
+                    @foreach (var race in Model.Races)
+                    {
+                        <li>@race</li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p>not yet</p>
+            }
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
