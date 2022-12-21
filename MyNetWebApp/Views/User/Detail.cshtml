@@ -8,10 +8,27 @@
 
         <div class="col-md-8">
             <h2>@Model.Username</h2>
+            @if (Model.ProfileImageUrl != null)
+            {
+                <img class="img-fluid" src="@Model.ProfileImageUrl" alt="">
+            }
+
         </div>
 
         <div class="col-md-4">
-            <h3 class="my-3">CLubs</h3>
+            <h3 class="my-3">Locations</h3>
+            @if (Model.Address != null)
+            {
+                <ul>
+                    <li>
+                        City - @(Model.Address.City != null ?  Model.Address.City : "not defined")
+                    </li>
+                    <li>
+                        State - @(Model.Address.State != null ?  Model.Address.State : "not defined")
+                    </li>
+                </ul>
+            }
+            <h3 class="my-3">Clubs</h3>
             @if (Model.Clubs != null)
             {
                 <ul>

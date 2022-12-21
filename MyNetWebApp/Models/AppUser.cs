@@ -11,8 +11,9 @@ namespace MyNetWebApp.Models
         //[Key]
         //public string Id { get; set; }
         public int? Pace { get; set; }
-        public int? Milage { get; set; }
-		[ForeignKey("Address")]
+        public int? Mileage { get; set; }
+        public string? ProfileImageUrl { get; set; }
+        [ForeignKey("Address")]
 		public int? AddressId { get; set; }
 		public Address? Address { get; set; }
 		public ICollection<Club> Clubs { get; set; }

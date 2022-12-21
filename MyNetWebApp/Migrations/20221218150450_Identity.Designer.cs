@@ -210,7 +210,7 @@ namespace MyNetWebApp.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int?>("Milage")
+                    b.Property<int?>("Mileage")
                         .HasColumnType("int");
 
                     b.Property<string>("NormalizedEmail")

@@ -29,7 +29,7 @@ namespace MyNetWebApp.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Pace = table.Column<int>(type: "int", nullable: true),
-                    Milage = table.Column<int>(type: "int", nullable: true),
+                    Mileage = table.Column<int>(type: "int", nullable: true),
                     AddressId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

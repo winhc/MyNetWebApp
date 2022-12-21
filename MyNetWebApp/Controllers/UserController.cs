@@ -32,7 +32,8 @@ namespace MyNetWebApp.Controllers
                     Id = user.Id,
                     Username = user.UserName,
                     Pace = user.Pace,
-                    Mileage = user.Milage
+                    Mileage = user.Mileage,
+                    ProfileImageUrl = user.ProfileImageUrl
                 };
                 result.Add(userViewModel);
             }
@@ -49,9 +50,11 @@ namespace MyNetWebApp.Controllers
                     Id = user.Id,
                     Username = user.UserName,
                     Pace = user.Pace,
-                    Mileage = user.Milage,
+                    Mileage = user.Mileage,
                     Clubs = user.Clubs,
-                    Races = user.Races
+                    Races = user.Races,
+                    ProfileImageUrl = user.ProfileImageUrl,
+                    Address = user.Address
                 };
 
             return View(userViewModel);

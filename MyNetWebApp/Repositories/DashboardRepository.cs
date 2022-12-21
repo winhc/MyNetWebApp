@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using MyNetWebApp.Data;
 using MyNetWebApp.Interfaces;
 using MyNetWebApp.Models;
@@ -27,6 +28,28 @@ namespace MyNetWebApp.Repositories
             var curUser = _httpContextAccessor.HttpContext?.User.GetUserId();
             var userClub = _context.Races.Where(race => race.AppUser.Id == curUser);
             return userClub.ToList();
+        }
+
+        public async Task<AppUser> GetUserById(string id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
+
+        public async Task<AppUser> GetUserByIdNoTracking(string id)
+        {
+            return await _context.Users.Where(user => user.Id == id).AsNoTracking().FirstOrDefaultAsync();
+        }
+
+        public bool Update(AppUser user)
+        {
+            _context.Update(user);
+            return Save();
+        }
+
+        public bool Save()
+        {
+            var result = _context.SaveChanges();
+            return result > 0 ? true : false;
         }
     }
 }

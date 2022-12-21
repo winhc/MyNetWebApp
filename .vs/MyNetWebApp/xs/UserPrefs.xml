@@ -1,53 +1,34 @@
 ﻿<Properties StartupConfiguration="{50284D38-5FA5-4B3C-9E0A-28F46585EED7}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="102" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.MyNetWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/ViewModels/UserViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyNetWebApp/Controllers/DashboardController.cs">
     <Files>
-      <File FileName="MyNetWebApp/Controllers/DashboardController.cs" />
-      <File FileName="MyNetWebApp/Controllers/ClubController.cs" />
-      <File FileName="MyNetWebApp/Program.cs" />
-      <File FileName="MyNetWebApp/Repositories/DashboardRepository.cs" />
-      <File FileName="MyNetWebApp/Views/Dashboard/Index.cshtml" />
-      <File FileName="MyNetWebApp/ViewModels/CreateRaceViewModel.cs" />
-      <File FileName="MyNetWebApp/Views/Club/Create.cshtml" />
-      <File FileName="MyNetWebApp/ViewModels/DashboardViewModel.cs" />
-      <File FileName="MyNetWebApp/Repositories/ClubRepository.cs" />
-      <File FileName="MyNetWebApp/ViewModels/CreateClubViewModel.cs" />
-      <File FileName="MyNetWebApp/ClaimsPrincipleExtensions.cs" />
-      <File FileName="MyNetWebApp/Models/Club.cs" />
-      <File FileName="MyNetWebApp/Views/Club/Index.cshtml" />
-      <File FileName="MyNetWebApp/Views/Race/Index.cshtml" />
-      <File FileName="MyNetWebApp/Views/Race/Create.cshtml" />
-      <File FileName="MyNetWebApp/Controllers/RaceController.cs" />
-      <File FileName="MyNetWebApp/Services/PhotoService.cs" />
-      <File FileName="MyNetWebApp/Views/Club/Edit.cshtml" />
-      <File FileName="MyNetWebApp/Controllers/UserController.cs" Line="24" Column="27" />
-      <File FileName="MyNetWebApp/Views/User/Index.cshtml" />
-      <File FileName="MyNetWebApp/Views/Shared/_Layout.cshtml" />
-      <File FileName="MyNetWebApp/Interfaces/IUserRepository.cs" />
-      <File FileName="MyNetWebApp/Repositories/UserRepository.cs" />
-      <File FileName="MyNetWebApp/Repositories/RaceRepository.cs" />
-      <File FileName="MyNetWebApp/ViewModels/UserViewModel.cs" Line="6" Column="25" />
+      <File FileName="MyNetWebApp/Controllers/ClubController.cs" Line="105" Column="56" />
+      <File FileName="MyNetWebApp/Controllers/DashboardController.cs" Line="56" Column="22" />
+      <File FileName="MyNetWebApp/Interfaces/IClubRepository.cs" Line="11" Column="28" />
+      <File FileName="MyNetWebApp/Repositories/ClubRepository.cs" Line="16" Column="4" />
+      <File FileName="MyNetWebApp/Repositories/DashboardRepository.cs" Line="46" Column="27" />
+      <File FileName="MyNetWebApp/Interfaces/IDashboardRepository.cs" Line="11" Column="12" />
+      <File FileName="MyNetWebApp/Interfaces/IUserRepository.cs" Line="11" Column="3" />
+      <File FileName="MyNetWebApp/Models/Address.cs" Line="13" Column="6" />
+      <File FileName="MyNetWebApp/Views/Dashboard/EditUserProfile.cshtml" Line="27" Column="45" />
+      <File FileName="MyNetWebApp/Repositories/UserRepository.cs" Line="42" Column="46" />
+      <File FileName="MyNetWebApp/Models/AppUser.cs" Line="15" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MyNetWebApp" expanded="True">
             <Node name="MyNetWebApp" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="DashboardController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Interfaces" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Repositories" expanded="True" />
               <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="UserViewModel.cs" selected="True" />
-              </Node>
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
                 <Node name="Club" expanded="True" />
@@ -65,4 +46,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MyNetWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/Controllers/ClubController.cs" relfile="MyNetWebApp/Controllers/ClubController.cs" line="102" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

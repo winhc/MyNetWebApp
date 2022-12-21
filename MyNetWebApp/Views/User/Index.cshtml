@@ -12,11 +12,26 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             @foreach (var user in Model)
-            {
+                {
                 <div class="col">
                     <div class="card shadow-sm">
                         <div class="card-body">
+                            @if (user.ProfileImageUrl != null)
+                            {
+                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="@user.ProfileImageUrl" alt="Club image" focusable="false" />
+                            }
                             <p class="card-text">@user.Username</p>
+                            @if (@user.Pace != null)
+                            {
+                                <p class="card-text">Pace: @user.Pace</p>
+
+                            }
+
+                            @if (@user.Mileage != null)
+                            {
+                                <p class="card-text">Mileage: @user.Mileage</p>
+
+                            }
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a class="btn btn-sm btn-outline-secondary" asp-controller="User" asp-action="Detail" asp-route-id="@user.Id">View</a>
