@@ -7,6 +7,7 @@ using MyNetWebApp.ViewModels;
 using Newtonsoft.Json;
 using System.Globalization;
 using System.Net;
+using System.Xml.Linq;
 
 namespace MyNetWebApp.Controllers;
 
@@ -48,6 +49,25 @@ public class HomeController : Controller
         }
         
         return View();
+    }
+
+    public async Task<IActionResult> SearchClubsByTitle(string title)
+    {
+        var homeViewModel = new HomeViewModel();
+        string apiUrl = $"https://localhost:7293/api/HomeApi/{title}";
+        HttpClient httpClient = new HttpClient();
+
+        HttpResponseMessage response = httpClient.GetAsync(apiUrl).Result;
+        if (response.IsSuccessStatusCode)
+        {
+            homeViewModel.Clubs = JsonConvert.DeserializeObject<IEnumerable<Club>>(response.Content.ReadAsStringAsync().Result);
+            return View("Index", homeViewModel);
+        }
+        else
+        {
+            return View("Index");
+        }
+
     }
 
     public IActionResult Privacy()

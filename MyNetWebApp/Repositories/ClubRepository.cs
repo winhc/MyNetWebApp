@@ -48,9 +48,15 @@ namespace MyNetWebApp.Repositories
             return await _context.Clubs.Where(c => c.Address.City.Contains(city)).Distinct().ToListAsync();
         }
 
-        public async Task<IEnumerable<Club>> GetClubsByCity(string city)
+        public async Task<IEnumerable<Club>?> GetClubsByCity(string city)
         {
             return await _context.Clubs.Where(club => club.Address.City.Contains(city)).ToListAsync();
+        }
+
+        public async Task<IEnumerable<Club>?> GetClubsByTitle(string title)
+        {
+            var result =  await _context.Clubs.FromSqlInterpolated($"EXECUTE dbo.SelectClubsByTitle {title}").ToListAsync();
+            return result;
         }
 
         public bool Save()
