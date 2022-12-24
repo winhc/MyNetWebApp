@@ -71,3 +71,8 @@
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.pdb
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.genruntimeconfig.cache
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/ref/MyNetWebApp.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.MvcApplicationPartsAssemblyInfo.cs
