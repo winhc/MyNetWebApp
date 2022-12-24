@@ -19,7 +19,7 @@ namespace MyNetWebApp.Controllers
             _userRepository = userRepository;
         }
 
-        [HttpGet("users")]
+        [HttpGet()]
         public async Task<IActionResult> Index()
         {
             var userList = await _userRepository.GetAllUsers();

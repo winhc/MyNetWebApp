@@ -6,7 +6,11 @@
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/MyNetWebApp.runtimeconfig.json
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/MyNetWebApp.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/MyNetWebApp.pdb
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/CloudinaryDotNet.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Humanizer.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -14,6 +18,8 @@
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Identity.Client.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
@@ -21,6 +27,7 @@
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Newtonsoft.Json.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/System.Drawing.Common.dll
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
@@ -64,10 +71,3 @@
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.pdb
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/MyNetWebApp.genruntimeconfig.cache
 /Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/obj/Debug/net6.0/ref/MyNetWebApp.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/CloudinaryDotNet.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Newtonsoft.Json.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
-/Volumes/Mini/WorkSpace/DotNet/MyNetWebApp/MyNetWebApp/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
