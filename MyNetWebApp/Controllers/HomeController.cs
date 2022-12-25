@@ -70,6 +70,17 @@ public class HomeController : Controller
 
     }
 
+    public async Task<IActionResult> Search(string title)
+    {
+        var homeViewModel = new HomeViewModel();
+
+        var clubs = await _clubRepository.GetClubByTitle(title);
+        
+        if (clubs is null) return View("Index");
+        homeViewModel.Clubs = clubs;
+        return View("Index", homeViewModel);
+    }
+
     public IActionResult Privacy()
     {
         return View();

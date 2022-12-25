@@ -48,6 +48,11 @@ namespace MyNetWebApp.Repositories
             return await _context.Clubs.Where(c => c.Address.City.Contains(city)).Distinct().ToListAsync();
         }
 
+        public async Task<IEnumerable<Club>?> GetClubByTitle(string title)
+        {
+            return await _context.Clubs.Where(c => c.Title.Contains(title)).ToListAsync();
+        }
+
         public async Task<IEnumerable<Club>?> GetClubsByCity(string city)
         {
             return await _context.Clubs.Where(club => club.Address.City.Contains(city)).ToListAsync();
